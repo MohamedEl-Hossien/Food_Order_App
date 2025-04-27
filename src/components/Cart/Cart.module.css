@@ -1,0 +1,91 @@
+.cart {
+  background-color: #161d1d;
+  color: #d9e2f1;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cartHeader,
+.cartFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #1d3131;
+}
+
+.cartHeader {
+  border-radius: 8px 8px 0 0;
+}
+
+.cartFooter {
+  border-radius: 0 0 8px 8px;
+}
+
+.cartHeader h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #d9e2f1;
+}
+
+.cartHeader button,
+.cartFooter button {
+  background-color: transparent;
+  color: #d9e2f1;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.cartHeader .closeButton {
+  color: #ffc404;
+}
+
+.cartFooter .checkoutButton {
+  background-color: #0ca2aa;
+}
+
+.cartFooter .totalPrice {
+  font-size: 1.5rem;
+  color: #d9e2f1;
+}
+.cartFooter .checkoutButton:hover {
+  background-color: #1c4741;
+}
+
+.emptyCart {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #c3cbd8;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .cart {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .cartHeader h2 {
+    font-size: 1.25rem;
+  }
+
+  .cartFooter .totalPrice {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cartHeader h2 {
+    font-size: 1rem;
+  }
+
+  .cartFooter .totalPrice {
+    font-size: 1rem;
+  }
+}

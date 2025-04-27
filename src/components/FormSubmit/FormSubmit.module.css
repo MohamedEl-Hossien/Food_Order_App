@@ -1,0 +1,72 @@
+.form {
+  background-color: #161d1d;
+  width: 80%;
+  padding: 2rem 3rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: auto;
+}
+
+.form h2 {
+  font-size: 2rem;
+  color: #d9e2f1;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+.form p {
+  font-size: 1rem;
+  color: #c3cbd8;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.form p span {
+  color: #ffc404;
+}
+
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 20px;
+}
+
+.formActions button {
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+}
+
+.formActions .submitButton {
+  background-color: #ffc404;
+  color: #1f1a09;
+}
+
+.formActions .submitButton:hover {
+  background-color: #0ca2aa;
+  color: #d9e2f1;
+}
+
+.formActions .cancelButton {
+  background-color: transparent;
+  color: #d9e2f1;
+}
+
+.formActions .cancelButton:hover {
+  background-color: #ff1a1a;
+}
+
+@keyframes fade-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(4rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,99 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5%;
+  margin: 1rem auto;
+  gap: 1rem;
+  background-color: #1d3131;
+  border-radius: 8px;
+  width: 95%;
+}
+
+header h1 {
+  font-family: cursive;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin: 0;
+  color: #d9e2f1;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+.headerActions {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.searchBar input {
+  padding: 0.5rem;
+  border: 1px solid #1c4741;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-family: "Lato", sans-serif;
+}
+.searchBar input:focus {
+  outline: none;
+  border-color: #0ca2aa;
+}
+
+.searchBar button {
+  padding: 0.5rem 1rem;
+  background-color: #0ca2aa;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+}
+
+.cartIcon {
+  position: relative;
+  cursor: pointer;
+}
+.cartIcon img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 2px solid #1c4741;
+}
+
+.cartIcon span {
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+  background-color: #ff0000;
+  color: white;
+  border-radius: 50%;
+  padding: 0.2rem 0.5rem;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+}
+.cartIcon span:hover {
+  background-color: #ff4d4d;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  .searchBar {
+    width: 100%;
+  }
+  .searchBar input {
+    width: 100%;
+  }
+  .searchBar button {
+    width: 100%;
+  }
+}

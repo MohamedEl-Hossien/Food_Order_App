@@ -1,0 +1,104 @@
+.menu {
+  width: 90%;
+  max-width: 70rem;
+  list-style: none;
+  margin: 2rem auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1rem;
+}
+
+.menu .noMeals {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #c3cbd8;
+  margin-top: 2rem;
+}
+
+.menuItem {
+  background-color: #161d1d;
+  border-radius: 1rem;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+.menuItem:hover {
+  transform: scale(1.04);
+  transition: transform 0.3s ease;
+}
+
+.menuItem img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.menuDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menuDetails h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.75rem 0;
+}
+
+.menuDetails .menuDescription {
+  margin: 1rem;
+}
+
+.menuDetails .menuPrice {
+  display: inline-block;
+  background-color: #1d3131;
+  color: #ffc404;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 0.5rem 2rem;
+  margin: 0;
+  border-radius: 4px;
+  cursor: none;
+}
+
+.menuDetails .menuPrice:hover {
+  background-color: #ffc404;
+  color: #1d3131;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menuDetails .addToCartButton {
+  margin-bottom: 1.5rem;
+  background-color: #1d3131;
+  color: #ffc404;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 0.5rem 2rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.menuDetails .addToCartButton:hover {
+  background-color: #ffc404;
+  color: #1d3131;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    grid-template-columns: 1fr;
+  }
+  .menuItem {
+    margin: 1rem 0;
+  }
+  .menuItem img {
+    height: 15rem;
+  }
+  .menuDetails h3 {
+    font-size: 1.2rem;
+  }
+}
