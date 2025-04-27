@@ -50,12 +50,14 @@
   background-color: #0ca2aa;
 }
 
+.cartFooter .checkoutButton:hover {
+  background-color: #ffc404;
+  color: #161d1d;
+}
+
 .cartFooter .totalPrice {
   font-size: 1.5rem;
   color: #d9e2f1;
-}
-.cartFooter .checkoutButton:hover {
-  background-color: #1c4741;
 }
 
 .emptyCart {
