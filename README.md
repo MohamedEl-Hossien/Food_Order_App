@@ -61,5 +61,3 @@ Food_Order_App/
 ├── package.json
 └── vite.config.js
 ```
-
-Let me know if you need any tweaks or styling enhancements! 🚀🔥 You're making great progress, Mohamed! Keep pushing forward. 💪
